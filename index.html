@@ -1,0 +1,779 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather+Sans&display=swap" rel="stylesheet">
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            font-family: sans-serif;
+        }
+
+        .main {
+            width: 98vw;
+            overflow: hidden;
+        }
+
+        .Conatiner {
+            background-color: rgba(54, 53, 67, 255);
+            width: 100vw;
+            height: 92vh;
+
+        }
+
+        header {
+            display: flex;
+        }
+
+        .name {
+            color: #fff;
+            display: inline-block;
+            margin: 0 90px;
+            font-size: 17px;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            letter-spacing: 3px;
+            padding: 42px;
+        }
+
+        nav ul li {
+            display: inline-block;
+            list-style: none;
+            margin: 40px 17px;
+            font-size: 17PX;
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            letter-spacing: 3px;
+        }
+
+        .anchor {
+            text-decoration: none;
+            color: #bbbaba;
+        }
+        .anchor:hover{
+            color: white;
+        }
+        .home{
+            color: white;
+        }
+
+        .i {
+            color: #fff;
+            position: absolute;
+            top: 190px;
+            margin-left: 140px;
+            font-size: 55px;
+            opacity: 0.5;
+        }
+
+        .basit {
+            color: #fff;
+            position: absolute;
+            top: 255px;
+            margin-left: 140px;
+            font-size: 55px;
+            font-weight: bold;
+            letter-spacing: 5px;
+            font-family: 'Merriweather Sans', sans-serif;
+        }
+
+        .line {
+            width: 186px;
+            height: 4px;
+            background-color: #f9b728;
+            position: absolute;
+            top: 327px;
+            left: 140px;
+        }
+
+        .exp {
+            position: absolute;
+            color: #fff;
+            top: 375px;
+            left: 140px;
+            font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            width: 262px;
+            font-size: 22px;
+            opacity: 0.5;
+        }
+
+        .circle {
+            width: 500px;
+            height: 500px;
+            border-radius: 50%;
+            background-color: #2d2d39;
+            margin: auto;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            /* z-index: -1; */
+        }
+
+        .pic {
+
+            position: absolute;
+            top: 3%;
+            left: 19%;
+            height: auto;
+            width: 300px;
+            border-radius: 40%;
+
+        }
+
+        .service {
+            position: absolute;
+            top: 200px;
+            right: 424px;
+            color: #fff;
+            width: 110px;
+            font-family: 'Merriweather Sans', sans-serif;
+            opacity: 0.6;
+            font-size: 18px;
+        }
+
+        .let {
+            position: absolute;
+            top: 228px;
+            right: 269px;
+            color: #fff;
+            width: 265px;
+            font-family:Arial, Helvetica, sans-serif;
+            font-size: 20px;
+            opacity: 0.6;
+        }
+
+        .show {
+            position: absolute;
+            top: 332px;
+            right: 452px;
+            color: #f9b728;
+            font-family: 'Merriweather Sans', sans-serif;
+        }
+
+        .arrow {
+            position: absolute;
+            top: 329px;
+            right: 406px;
+            width: 30px;
+        }
+
+        .twitter {
+            position: absolute;
+            top: 374px;
+            right: 509px;
+            width: 29px;
+        }
+
+        .insta {
+            position: absolute;
+            top: 374px;
+            right: 467px;
+            width: 27px;
+        }
+
+        .pin {
+            position: absolute;
+            top: 374px;
+            right: 422px;
+            width: 27px;
+        }
+
+        .you {
+            position: absolute;
+            top: 374px;
+            right: 380px;
+            width: 27px;
+        }
+
+        .social {
+
+            background-color: rgba(54, 53, 67, 255);
+            height: 100px;
+            width: 1075px;
+            border: 1px solid black;
+            position: absolute;
+            top: 680px;
+            right: 120px;
+            left: 153px;
+        }
+
+        .box1 {
+            position: relative;
+            top: 25px;
+            left: 75px;
+            height: 50px;
+            width: 174px;
+            background-color: #2d2d39;
+        }
+
+        .meta {
+            position: relative;
+            left: 27px;
+            width: 40px;
+            top: 3px;
+        }
+
+        .metap {
+            color: #fff;
+            text-align: center;
+            position: relative;
+            top: -31px;
+            left: 21px;
+            font-size: 22px;
+            font-family: 'Merriweather Sans', sans-serif;
+        }
+
+        .box2 {
+            position: absolute;
+            top: 25px;
+            left: 330px;
+            height: 50px;
+            width: 174px;
+            background-color: #2d2d39;
+        }
+
+        .google {
+            height: auto;
+            width: 105px;
+            position: relative;
+            left: 36px;
+        }
+
+        .box3 {
+            position: absolute;
+            top: 25px;
+            left: 570px;
+            height: 50px;
+            width: 174px;
+            background-color: #2d2d39;
+        }
+
+        .linkddin {
+            position: relative;
+            left: 114px;
+            width: 42px;
+            top: 3px;
+        }
+
+        .linkp {
+            color: #fff;
+            position: absolute;
+            font-size: 22px;
+            font-family: 'Merriweather Sans', sans-serif;
+            top: 11px;
+            left: 28px;
+            font-size: 25px;
+        }
+
+        .box4 {
+            position: absolute;
+            top: 25px;
+            left: 800px;
+            height: 50px;
+            width: 174px;
+            background-color: #2d2d39;
+        }
+
+        .slack {
+            position: absolute;
+            top: 5px;
+            width: 39px;
+            left: 33px;
+        }
+
+        .slackp {
+            color: #fff;
+            position: absolute;
+            font-size: 22px;
+            font-family: 'Merriweather Sans', sans-serif;
+            top: 11px;
+            left: 75px;
+            right: 75px;
+        }
+
+        .conatiner2 {
+            background-color: #282834;
+            width: 100vw;
+            height: 120vh;
+        }
+
+        .left h1 {
+            color: #fff;
+            position: relative;
+            top: 200px;
+            left: 150px;
+            font-size: 28px;
+            letter-spacing: 3px;
+            font-family: 'Merriweather Sans', sans-serif;
+        }
+
+        .result {
+            color: #fff;
+            position: relative;
+            width: 412px;
+            opacity: 0.6;
+            top: 226px;
+            left: 150px;
+            font-size: 13px;
+            letter-spacing: 3px;
+            font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        .one {
+            position: relative;
+            color: #f9b728;
+            top: 290px;
+            left: 150px;
+            font-size: 25px;
+        }
+
+        .pro {
+            color: #fff;
+            position: relative;
+            font-size: 15px;
+            top: 10px;
+            opacity: 0.6;
+        }
+
+        .two {
+            position: relative;
+            color: #f9b728;
+            top: 290px;
+            left: 196px;
+            font-size: 25px;
+        }
+
+        .net {
+            color: #fff;
+            position: relative;
+            font-size: 15px;
+            top: 10px;
+            opacity: 0.6;
+        }
+
+        .three {
+            position: relative;
+            color: #f9b728;
+            top: 326px;
+            left: 27px;
+            font-size: 25px;
+        }
+
+        .contract {
+            color: #fff;
+            position: relative;
+            font-size: 15px;
+            top: 10px;
+            opacity: 0.6;
+        }
+
+        .four {
+            position: relative;
+            color: #f9b728;
+            top: 326px;
+            left: 58px;
+            font-size: 25px;
+        }
+
+        .years {
+            color: #fff;
+            position: relative;
+            font-size: 15px;
+            top: 10px;
+            opacity: 0.6;
+        }
+
+        .ux {
+            position: absolute;
+            top: 890px;
+            width: 149px;
+            right: 539px;
+            height: auto;
+        }
+
+        .uxi {
+            color: #fff;
+            font-family: 'Merriweather Sans', sans-serif;
+            position: absolute;
+            right: 369px;
+            top: 921px;
+            font-size: 23px;
+
+        }
+
+        .pj {
+            color: #fff;
+            font-family: 'Merriweather Sans', sans-serif;
+            position: absolute;
+            right: 435px;
+            top: 954px;
+            font-size: 15px;
+            opacity: 0.7;
+        }
+
+        .ra {
+            position: absolute;
+            top: 921px;
+            right: 206px;
+        }
+
+        .ln {
+            width: 481px;
+            height: 2px;
+            background-color: #fff;
+            position: absolute;
+            top: 1008px;
+            right: 206px;
+            opacity: 0.5;
+        }
+
+        .fd {
+            height: auto;
+            width: 149px;
+            position: absolute;
+            top: 1050px;
+            right: 539px;
+
+        }
+
+        .fed {
+            color: #fff;
+            font-family: 'Merriweather Sans', sans-serif;
+            position: absolute;
+            right: 311px;
+            top: 1075px;
+            font-size: 23px;
+        }
+
+        .pj2 {
+            color: #fff;
+            font-family: 'Merriweather Sans', sans-serif;
+            position: absolute;
+            right: 435px;
+            top: 1105px;
+            font-size: 15px;
+            opacity: 0.7;
+        }
+
+        .ra2 {
+            position: absolute;
+            top: 1075px;
+            right: 206px;
+        }
+
+        .ln2 {
+            width: 481px;
+            height: 2px;
+            background-color: #fff;
+            position: absolute;
+            top: 1160px;
+            right: 206px;
+            opacity: 0.5;
+        }
+
+        .md {
+            height: auto;
+            width: 149px;
+            position: absolute;
+            top: 1210px;
+            right: 539px;
+
+        }
+
+        .mad {
+            color: #fff;
+            font-family: 'Merriweather Sans', sans-serif;
+            position: absolute;
+            right: 304px;
+            top: 1232px;
+            font-size: 23px;
+        }
+
+        .pj3 {
+            color: #fff;
+            font-family: 'Merriweather Sans', sans-serif;
+            position: absolute;
+            right: 447px;
+            top: 1265px;
+            font-size: 15px;
+            opacity: 0.7;
+        }
+
+        .ra3 {
+            position: absolute;
+            top: 1233px;
+            right: 206px;
+        }
+
+        .ln3 {
+            width: 481px;
+            height: 2px;
+            background-color: #fff;
+            position: absolute;
+            top: 1310px;
+            right: 206px;
+            opacity: 0.5;
+        }
+
+        .container3 {
+            width: 100%;
+            height: 10vh;
+            /* color: rgba(54, 53, 67, 255); */
+            overflow: hidden;
+            background-color: rgba(54, 53, 67, 255);
+        }
+
+        .b1 {
+            background-color: rgb(61 59 86);
+            position: absolute;
+            top: 1468px;
+            left: 150px;
+            width: 300px;
+            height: 280px;
+            z-index: 1;
+        }
+
+        .icon1 {
+            height: auto;
+            width: 40px;
+            position: relative;
+            top: 25px;
+            left: 25px;
+
+        }
+
+        .cl1 {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            background-color: #2d2d39;
+            margin: auto;
+            transform: translate(-50%, -50%);
+            position: absolute;
+            top: 46px;
+            left: 44px;
+            opacity: 0.5;
+            z-index: -1;
+        }
+
+        .uxid {
+
+            color: #fff;
+            position: absolute;
+            font-family: 'Merriweather Sans', sans-serif;
+            top: 95px;
+            left: 26px;
+            font-size: 21px;
+
+        }
+
+        .uxid2 {
+
+            color: #fff;
+            position: absolute;
+            font-family: 'Merriweather Sans', sans-serif;
+            top: 146px;
+            left: 26px;
+            font-size: 15px;
+            opacity: 0.5;
+            width: 208px;
+
+        }
+
+        .b2 {
+            background-color: rgb(61 59 86);
+            position: absolute;
+            top: 1468px;
+            left: 550px;
+            width: 300px;
+            height: 280px;
+            z-index: 1;
+        }
+
+        .icon2 {
+            height: auto;
+            width: 35px;
+            position: relative;
+            top: 26px;
+            left: 27px;
+        }
+
+        .b3 {
+            background-color: rgb(61 59 86);
+            position: absolute;
+            top: 1468px;
+            left: 950px;
+            width: 300px;
+            height: 280px;
+            z-index: 1;
+        }
+
+        .icon3 {
+            height: auto;
+            width: 35px;
+            position: relative;
+            top: 26px;
+            left: 27px;
+        }
+
+        .uxid3 {
+
+            color: #fff;
+            position: absolute;
+            font-family: 'Merriweather Sans', sans-serif;
+            top: 146px;
+            left: 26px;
+            font-size: 15px;
+            opacity: 0.5;
+            width: 230px;
+
+        }
+
+        .icon4 {
+            position: absolute;
+            top: 47px;
+            right: 130px;
+        }
+
+        .icon5 {
+
+            position: absolute;
+            top: 45px;
+            right: 190px;
+        }
+
+        .icon6 {
+
+            position: absolute;
+            top: 45px;
+            right: 250px;
+        }
+    </style>
+
+
+</head>
+
+<body>
+    <div class="main">
+        <div class="Conatiner">
+            <header>
+                <nav>
+                    <ul>
+                        <div class="name">&#128512;Abdul Basit</div>
+                        <li><a href="#Home" class="anchor home">Home</a></li>
+                        <li><a href="#Portfolio" class="anchor">Portfolio</a></li>
+                        <li><a href="#Testimonial " class="anchor">Testimonial</a></li>
+                        <li><a href="#About" class="anchor">About</a></li>
+
+                        <img src="./Images/align-left.png" class="icon4">
+                        <img src="./Images/icons8-dribbble-64.png" class="icon5" width="02%">
+                        <img src="./Images/icons8-linkedin-2-30.png" class="icon6" width="02%">
+                    </ul>
+                </nav>
+            </header>
+            <div class="intro">
+
+                <div class="circle"> <img src="Images/basit.jpg" class="pic"></div>
+                <p class="i">I'm</p>
+                <p class="basit"> Abdul Basit</p>
+                <div class="line"></div>
+                <div class="exp">A freelancer that provide services for digital programming and design content needs,
+                    for
+                    all
+                    business with more than 10 Years of Experience.</div>
+                <p class="service">Services</p>
+                <p class="let">
+                    Let's build quality products in programming and design with my services
+                </p>
+                <div class="show">show more</div>
+                <img src="./Images/icons8-right-arrow-30.png" class="arrow">
+                <img src="./Images/icons8-twitter-24.png" class="twitter">
+                <img src="./Images/icons8-instagram-50.png" class="insta">
+                <img src="./Images/icons8-pinterest-p-32.png" class="pin">
+                <img src="./Images/icons8-youtube-50.png" class="you">
+
+
+            </div>
+            <div class="social">
+                <div class="box1">
+                    <a href="#metta"> <img src="./Images/icons8-meta-48.png" class="meta">
+                        <p class="metap">META</p>
+                    </a>
+                </div>
+                <div class="box2">
+                    <a href="#google"> <img src="./Images/Google-logo.png" class="google">
+                    </a>
+                </div>
+                <div class="box3">
+                    <a href="#linkedin"><img src="./Images/icons8-linkedin-48.png" class="linkddin">
+                        <p class="linkp">LINKED</p>
+                    </a>
+                </div>
+                <div class="box4">
+                    <a href="#slack"><img src="./Images/icons8-slack-new-48.png" class="slack">
+                        <p class="slackp">SLACK</p>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="conatiner2">
+
+            <div class="left">
+
+                <h1>What Can I Do For <br> Your Needs </h1>
+                <p class="result">It is easier to entrust the work to the expert because they are able to provide the
+                    best
+                    results with relaible quality</p>
+            </div>
+
+            <table>
+                <tr>
+                    <td class="one">250+ <p class="pro">Project completed</p>
+                    </td>
+                    <td class="two">100+ <p class="net">Community Network</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                    <td class=three>30+ <p class="contract">Contract remote</p>
+                    </td>
+                    <td class="four">10+ <p class="years">Years experience</p>
+                    </td>
+                    </td>
+                </tr>
+            </table>
+            <div class="rightcon">
+                <img src="./Images/gradient-ui-ux-background_23-2149052117.avif" class="ux">
+                <p class="uxi">UI/UX Design</p>
+                <p class="pj">117 Project</p>
+                <img src="./Images/icons8-right-arrow-30.png" class="ra">
+                <div class="ln"></div>
+                <img src="./Images/Become_a_Front_End_Developer.avif" class="fd">
+                <p class="fed">Front End Develop</p>
+                <p class="pj2">84 Project</p>
+                <img src="./Images/icons8-right-arrow-30.png" class="ra2">
+                <div class="ln2"></div>
+                <img src="./Images/mobile app develop.jpg" class="md">
+                <p class="mad">Mobile app Develop</p>
+                <p class="pj3">32 Project</p>
+                <img src="./Images/icons8-right-arrow-30.png" class="ra3">
+                <div class="ln3"></div>
+            </div>
+
+        </div>
+        <div class="container3"></div>
+
+
+    </div>
+
+</body>
+
+</html>
